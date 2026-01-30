@@ -7,7 +7,7 @@
         "phpunit/phpunit": "^11.5"
     },
 
-    "autoload-dev": {
+    "autoload": {
         "psr-4": {
             "App\\": "src/"
         }
