@@ -6,10 +6,8 @@ use App\Calculator;
 
 class Verify
 {
-    protected Calculator $calculator;
-    public function __construct(Calculator $calculator)
+    public function __construct(protected Calculator $calculator)
     {
-        $this->calculator = $calculator;
     }
 
     public function verifyAdd(float $a, float $b, float $expected): bool
@@ -53,5 +51,5 @@ $verifyResults = [
 ];
 
 foreach ($verifyResults as $operation => $result) {
-    echo "{$operation} verification: " . ($result ? "Passed" : "Failed") . nl2br(PHP_EOL);
+    echo $operation . ' verification: ' . ($result ? "Passed" : "Failed") . nl2br(PHP_EOL);
 }
