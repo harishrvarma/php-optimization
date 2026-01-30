@@ -1,0 +1,7 @@
+PHPStan (static analysis) : show the all issues with level 9
+
+Install:
+composer require --dev phpstan/phpstan
+
+Run: 
+vendor/bin/phpstan analyse src --level 9
