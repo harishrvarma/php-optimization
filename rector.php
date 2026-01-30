@@ -10,8 +10,18 @@ return RectorConfig::configure()
     ])
     // uncomment to reach your current PHP version
     // ->withPhpSets()
-    ->withTypeCoverageLevel(50)
-    ->withDeadCodeLevel(50)
-    ->withCodeQualityLevel(50)
-    ->withPhpVersion(80212);
+    ->withPhpVersion(80212)
+    ->withPhpSets(php82: true)
+    ->withPreparedSets(
+        deadCode: true,
+        codingStyle: true,
+        codeQuality: true,
+        typeDeclarations: true,
+        naming: true,
+        //privatization: true,
+        earlyReturn: true,
+        instanceOf: true,
+        symfonyCodeQuality: true,
+        doctrineCodeQuality: true,
+    );
 
