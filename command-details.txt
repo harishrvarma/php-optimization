@@ -5,3 +5,18 @@ composer require --dev phpstan/phpstan
 
 Run: 
 vendor/bin/phpstan analyse src --level 9
+
+--------------------------------------------------
+
+Rector (auto refactoring & PHP upgrades)
+
+Install:
+composer require --dev rector/rector
+
+Run: 
+Dry run (recommended first):
+vendor/bin/rector process src --dry-run
+
+Apply changes:
+vendor/bin/rector process first-exa
+
