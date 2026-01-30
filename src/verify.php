@@ -4,7 +4,6 @@ require_once __DIR__ . '/Calculator.php'; // Include the Calculator class
 
 use App\Calculator;
 
-
 class Verify
 {
     protected Calculator $calculator;
@@ -32,7 +31,7 @@ class Verify
     {
         return $this->calculator->div($a, $b) === $expected;
     }
-    
+
 
 }
 
@@ -48,7 +47,7 @@ $verifyResults = [
     'Subtraction' => $verify->verifySub(10, 5, 5),
     'Multiplication' => $verify->verifyMul(10, 5, 50),
     'Division' => $verify->verifyDiv(10, 5, 2),
-];  
+];
 
 foreach ($verifyResults as $operation => $result) {
     echo "{$operation} verification: " . ($result ? "Passed" : "Failed") . nl2br(PHP_EOL);
