@@ -19,4 +19,12 @@ vendor/bin/rector process src --dry-run
 
 Apply changes:
 vendor/bin/rector process first-exa
+--------------------------------------------------
+
+PHP-CS-Fixer (auto format fixer): 
+Install:
+composer require --dev friendsofphp/php-cs-fixer
+
+Run: 
+vendor/bin/php-cs-fixer fix src --using-cache=no --no-interaction --dry-run --diff --verbose
 
