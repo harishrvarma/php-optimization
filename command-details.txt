@@ -28,3 +28,9 @@ composer require --dev friendsofphp/php-cs-fixer
 Run: 
 vendor/bin/php-cs-fixer fix src --using-cache=no --no-interaction --dry-run --diff --verbose
 
+--------------------------------------------------
+Install:
+composer require --dev phpunit/phpunit
+
+Run: 
+vendor\bin\phpunit --bootstrap vendor/autoload.php --testdox --colors=always tests
