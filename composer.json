@@ -1,6 +1,7 @@
 {
     "name": "harishvarma/php-optimization",
     "require-dev": {
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.1",
+        "rector/rector": "^2.3"
     }
 }
